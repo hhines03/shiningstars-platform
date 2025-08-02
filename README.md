@@ -17,6 +17,13 @@ This project is being built with a modern, professional technology stack:
 * **Database:** PostgreSQL
 * **Deployment:** Heroku/Render (for backend) & Vercel (for frontend)
 
+### 3. Data Model
+
+The core data structure is based on a clear separation between actors (`User` model) and the data they manage (`Child` model):
+* **`User` Model:** Represents entities that can log in. It contains a `role` field ('admin' or 'parent') to manage permissions.
+* **`Child` Model:** Represents the children in care. It is linked to a `User` via a `parent_id` foreign key. This ensures a parent can only ever access their own child's data.
+
+
 ## Project Roadmap (MVP Features)
 
 The following key features are planned for the Minimum Viable Product (MVP):
@@ -24,7 +31,7 @@ The following key features are planned for the Minimum Viable Product (MVP):
 * [ ] Secure User Authentication (Admin & Parent roles)
 * [ ] Admin Dashboard for Client & Staff Management
 * [ ] Parent Portal for Viewing Child Information
-* [ ] Dynamic Booking & Scheduling System
+* [ ] Dynamic Booking & Scheduling System 
 * [ ] Automated Invoicing based on Bookings
 
 ## Contact

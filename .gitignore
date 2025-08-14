@@ -1,0 +1,26 @@
+# Virtual Environment
+venv/
+
+# Django project specific files
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# Python basics
+*.p[oa]
+*.egg-info/
+dist/
+build/
+
+# Editor folders
+.vscode/
+.idea/

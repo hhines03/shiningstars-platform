@@ -20,5 +20,6 @@ from django.urls import path, include # include here acts as a pointer for djang
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('users.urls')),
+    path('api-auth', include('rest_framework.urls')),
 ]
 # if anyone visits a page with /api inside then this code will sends the rest of the url to urls.py under the users.urls file 
